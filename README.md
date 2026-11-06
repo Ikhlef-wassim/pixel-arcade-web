@@ -5,11 +5,15 @@ An interactive HTML5 Canvas arcade game built with vanilla HTML, CSS, and JavaSc
 ## Live Demo
 - [Play Pixel Brick Breaker](https://ikhlef-wassim.github.io/pixel-arcade-web/)
 
+## Controls
+- **Move Paddle:** Mouse cursor, `Left` / `Right` Arrow keys, or `A` / `D`
+- **Start / Restart:** `Space` bar or **Start / Restart** button
+
 ## Features
 - Smooth 60 FPS `requestAnimationFrame` physics and paddle angle deflection
-- Mouse, Arrow Key, and `A`/`D` controls
 - Multi-wave progression with increasing ball speed
 - Persistent high-score tracking via `localStorage`
+- Responsive dark-mode UI styled to match GitHub Dark
 
 ## Tech Stack
 - **HTML5 Canvas**
