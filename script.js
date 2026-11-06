@@ -38,8 +38,7 @@ function initBricks() {
 function resetBall() {
   ball.x = canvas.width / 2;
   ball.y = canvas.height - 32;
-  const dir = Math.random() > 0.5 ? 1 : -1;
-  ball.vx = 3.4 * dir;
+  ball.vx = 3.4 * (Math.random() > 0.5 ? 1 : -1);
   ball.vy = -3.4;
 }
 
@@ -67,8 +66,7 @@ document.addEventListener("keyup", (e) => {
 });
 canvas.addEventListener("mousemove", (e) => {
   const rect = canvas.getBoundingClientRect();
-  const scaleX = canvas.width / rect.width;
-  const mx = (e.clientX - rect.left) * scaleX;
+  const mx = (e.clientX - rect.left) * (canvas.width / rect.width);
   paddle.x = Math.max(0, Math.min(canvas.width - paddle.w, mx - paddle.w / 2));
 });
 actionBtn.addEventListener("click", startNewGame);
