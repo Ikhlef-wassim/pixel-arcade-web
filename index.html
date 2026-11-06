@@ -3,17 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wassim Ikhlef | Interactive Web Demo</title>
+  <title>Pixel Arcade | Brick Breaker</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main class="card">
-    <h1>Wassim Ikhlef</h1>
-    <p class="subtitle">Game Developer &amp; Web Developer &bull; Algeria</p>
-    <canvas id="gameCanvas" width="480" height="240"></canvas>
+    <header class="hud">
+      <div>
+        <h1>Pixel Brick Breaker</h1>
+        <p class="subtitle">Move with Mouse or Left/Right Arrows</p>
+      </div>
+      <div class="stats">
+        <span>Score: <strong id="score">0</strong></span>
+        <span>Best: <strong id="best">0</strong></span>
+        <span>Lives: <strong id="lives">3</strong></span>
+      </div>
+    </header>
+    <canvas id="gameCanvas" width="540" height="360"></canvas>
     <div class="controls">
-      <button id="toggleBtn">Pause Animation</button>
-      <span id="fps">60 FPS</span>
+      <button id="actionBtn">Start / Restart</button>
+      <span id="statusText">Press Space or Click Start</span>
     </div>
   </main>
   <script src="script.js"></script>

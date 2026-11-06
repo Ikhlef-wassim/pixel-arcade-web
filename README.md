@@ -1,11 +1,17 @@
-# Pixel Arcade Web
+# Pixel Brick Breaker
 
-An interactive HTML5 Canvas web demo built with vanilla HTML, CSS, and JavaScript.
+An interactive HTML5 Canvas arcade game built with vanilla HTML, CSS, and JavaScript.
 
 ## Live Demo
-- [Launch Interactive Demo](https://ikhlef-wassim.github.io/pixel-arcade-web/)
+- [Play Pixel Brick Breaker](https://ikhlef-wassim.github.io/pixel-arcade-web/)
+
+## Features
+- Smooth 60 FPS `requestAnimationFrame` physics and paddle angle deflection
+- Mouse, Arrow Key, and `A`/`D` controls
+- Multi-wave progression with increasing ball speed
+- Persistent high-score tracking via `localStorage`
 
 ## Tech Stack
-- **HTML5 Canvas** for 2D rendering
-- **CSS3** dark-mode UI styling
-- **Vanilla JavaScript** (`requestAnimationFrame` game loop)
+- **HTML5 Canvas**
+- **CSS3**
+- **Vanilla JavaScript**
