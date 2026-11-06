@@ -43,7 +43,6 @@ canvas {
   width: 100%;
   height: auto;
   display: block;
-  cursor: none;
 }
 .controls {
   margin-top: 14px;
