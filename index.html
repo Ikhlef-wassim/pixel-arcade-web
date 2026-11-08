@@ -3,28 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pixel Arcade | Brick Breaker</title>
+  <title>Ikhlef Wassim | Game &amp; Web Developer</title>
+  <meta name="description" content="Portfolio of Ikhlef Wassim, a game and web developer from Algeria building with Unreal Engine, Unity, C++, C# and JavaScript." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ikhlef Wassim | Game &amp; Web Developer" />
+  <meta property="og:description" content="Game and web developer from Algeria. Unreal Engine, Unity, C++, C# and JavaScript projects." />
+  <meta property="og:url" content="https://ikhlef-wassim.github.io/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="card">
-    <header class="hud">
-      <div>
-        <h1>Pixel Brick Breaker</h1>
-        <p class="subtitle">Move with Left / Right Arrow Keys</p>
-      </div>
-      <div class="stats">
-        <span>Score: <strong id="score">0</strong></span>
-        <span>Best: <strong id="best">0</strong></span>
-        <span>Lives: <strong id="lives">3</strong></span>
+  <main class="container">
+    <header class="hero">
+      <p class="badge">Game Developer &bull; Web Developer &bull; Algeria</p>
+      <h1>Ikhlef Wassim</h1>
+      <p class="bio">
+        Building interactive worlds in <strong>Unreal Engine</strong> &amp; <strong>Unity</strong> (C++ / C#)
+        and fast, responsive web applications with <strong>HTML, CSS &amp; JavaScript</strong>.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/Ikhlef-wassim" target="_blank" rel="noopener">GitHub Profile</a>
+        <a class="btn" href="#contact">Contact me</a>
       </div>
     </header>
-    <canvas id="gameCanvas" width="540" height="360"></canvas>
-    <div class="controls">
-      <button id="actionBtn">Start / Restart</button>
-      <span id="statusText">Press Space or Click Start</span>
-    </div>
+
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <div>
+            <div class="card-top">
+              <h3>Pixel Brick Breaker</h3>
+              <span class="tag">HTML5 Canvas &bull; JS</span>
+            </div>
+            <img class="preview" src="assets/brick-breaker.gif" alt="Pixel Brick Breaker gameplay" loading="lazy" />
+            <p>60 FPS arcade game with arrow-key paddle physics, wave speed scaling, and persistent high scores.</p>
+          </div>
+          <div class="card-links">
+            <a href="/pixel-arcade-web/" target="_blank" rel="noopener">Live Demo &rarr;</a>
+            <a href="https://github.com/Ikhlef-wassim/pixel-arcade-web" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-top">
+              <h3>Sorting Algorithms Visualizer</h3>
+              <span class="tag">Algorithms &bull; JS</span>
+            </div>
+            <p>Real-time step visualization for Bubble, Selection, Insertion, and Quick Sort with live swap counters.</p>
+          </div>
+          <div class="card-links">
+            <a href="/algo-visualizer-web/" target="_blank" rel="noopener">Live Demo &rarr;</a>
+            <a href="https://github.com/Ikhlef-wassim/algo-visualizer-web" target="_blank" rel="noopener">Source Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-top">
+              <h3>Unreal C++ Sandbox</h3>
+              <span class="tag">UE5 &bull; C++</span>
+            </div>
+            <p>Modular Unreal Engine 5 gameplay systems with Blueprint-exposed ActorComponents and Git LFS setup.</p>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/Ikhlef-wassim/unreal-cpp-sandbox" target="_blank" rel="noopener">Source Code &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-top">
+              <h3>Unity Arcade Prototype</h3>
+              <span class="tag">Unity &bull; C#</span>
+            </div>
+            <p>Responsive 2D/3D movement controller featuring cooldown-driven dash physics and Git LFS tracking.</p>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/Ikhlef-wassim/unity-arcade-prototype" target="_blank" rel="noopener">Source Code &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-top">
+              <h3>C++ Terminal Arcade</h3>
+              <span class="tag">C++ &bull; Terminal</span>
+            </div>
+            <p>2D ASCII rogue dungeon crawler engine in pure C++ with custom non-canonical keyboard parsing and bounds physics.</p>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/Ikhlef-wassim/cpp-terminal-arcade" target="_blank" rel="noopener">Source Code &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="stack">
+      <h2>Tech Stack</h2>
+      <div class="pills">
+        <span>Unreal Engine</span><span>Unity</span><span>C++</span><span>C#</span>
+        <span>C</span><span>Python</span><span>HTML5</span><span>CSS3</span>
+        <span>JavaScript</span><span>Git &amp; Git LFS</span><span>Bash</span>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Open to game jams, indie projects, and freelance web work. Message me on Discord or Instagram, or send an email.</p>
+      <div class="actions">
+        <button class="btn" data-copy="ikh._.wa">Discord: ikh._.wa</button>
+        <a class="btn" href="https://instagram.com/unhinged_.dev" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn" href="mailto:YOUR_EMAIL">Email</a>
+      </div>
+    </section>
+
+    <footer class="footer">&copy; 2026 Ikhlef Wassim</footer>
   </main>
-  <script src="script.js?v=4"></script>
+  <script src="script.js"></script>
 </body>
 </html>
